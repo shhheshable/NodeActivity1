@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>NodeActivity1</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous"
+    />
+</head>
+
+<style>
+    body {
+        color: black;
+    }
+
+    /* Remove link styles globally */
+    a.nav-link {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    /* Custom styles for specific links */
+    a.h {
+        font-weight: bolder;
+        text-decoration: underline;
+    }
+
+
+
+    /* Welcome Section Styles */
+    .welcome-section {
+        height: 100vh; /* Full screen height */
+        display: flex;
+        background-color: bisque;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        position: relative;
+    }
+
+    /* Overlay on the background image */
+    .welcome-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+        z-index: 1;
+    }
+
+    /* Welcome content styles */
+    .welcome-content {
+        z-index: 2; /* Above the overlay */
+    }
+
+    h1 {
+        font-size: 4rem;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    /* Call-to-action button */
+    .btn-custom {
+        background-color: #007bff;
+        border-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 50px;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-custom:hover {
+        background-color: #0056b3;
+        border-color: #0056b3;
+    }
+</style>
+
+<body>
+    <header>
+        
+    </header>
+    
+    <main>
+        <!-- Welcome Intro Section -->
+
+        <nav class="nav nav-pills nav-fill">
+            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link active" aria-current="page" href="/About">About</a>
+            <a class="nav-link" href="/Contacts">Contacts</a>
+            <a class="nav-link" href="/Shop">Shop</a>
+        </nav>
+        
+        <section class="welcome-section">
+
+            <div class="welcome-content">
+                <h1>About Our Website</h1>
+                <p>Our journey starts here. Explore and discover something new today!</p>
+                <a href="/404.html" class="btn btn-custom">Explore Now</a>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"
+    ></script>
+</body>
+</html>
